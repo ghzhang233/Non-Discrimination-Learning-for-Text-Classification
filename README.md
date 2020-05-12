@@ -2,7 +2,7 @@
 
 This is the code in [Demographics Should Not Be the Reason of Toxicity: Mitigating Discrimination in Text Classifications with Instance Weighting](<https://arxiv.org/pdf/2004.14088.pdf>) which has been accepted by ACL 2020.
 
-We put the codes and generated weights for the three experiments in the paper in their corresponding folders. Please read the README.txt in each folder for instructions of usage.
+We put the codes and generated weights for the three experiments in the paper in their corresponding folders. **Please read the README.txt in each folder for instructions of usage.**
 
 ## Citation
 
