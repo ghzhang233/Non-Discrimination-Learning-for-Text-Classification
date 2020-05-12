@@ -46,4 +46,4 @@ termcolor==1.1.0
 torch==1.0.1
 torchvision==0.2.1
 tqdm==4.33.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
