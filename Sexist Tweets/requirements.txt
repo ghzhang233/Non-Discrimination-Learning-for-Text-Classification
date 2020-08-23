@@ -3,7 +3,6 @@ astor==0.7.1
 certifi==2019.3.9
 cffi==1.12.1
 cycler==0.10.0
-Cython==0.29.6
 et-xmlfile==1.0.1
 fasttext==0.8.3
 future==0.17.1
@@ -38,12 +37,6 @@ PyYAML==3.13
 scikit-learn==0.20.3
 scipy==1.2.1
 six==1.12.0
-tensorboard==1.13.1
-tensorflow==1.12.0
-tensorflow-estimator==1.13.0
-tensorflow-gpu==1.13.1
+tensorflow-gpu
 termcolor==1.1.0
-torch==1.0.1
-torchvision==0.2.1
-tqdm==4.33.0
-Werkzeug==0.14.1
+tqdm
