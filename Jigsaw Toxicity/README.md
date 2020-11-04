@@ -102,13 +102,13 @@ PYTHONHASHSEED=0 python data_utils.py
 PYTHONHASHSEED=0 python make_weights.py
 
 # for baseline
-PYTHONHASHSEED=0 python main.py --round 10
+PYTHONHASHSEED=0 python main.py --round 10 --name_model biased
 
 # for supplementation
-PYTHONHASHSEED=0 python main.py --use_supplementation --round 10
+PYTHONHASHSEED=0 python main.py --use_supplementation --round 10 --name_model sup
 
 # for non-discrimination learning
-PYTHONHASHSEED=0 python main.py --use_weights --round 10
+PYTHONHASHSEED=0 python main.py --use_weights --round 10 --name_model weight
 
 # For generate Tabel 8 as shown in the paper
 PYTHONHASHSEED=0 python get_proportion.py
