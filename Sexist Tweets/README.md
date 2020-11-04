@@ -113,13 +113,13 @@ PYTHONHASHSEED=0 python make_madlib.py
 PYTHONHASHSEED=0 python make_weights.py
 
 # for baseline
-PYTHONHASHSEED=0 python main.py --round 10
+PYTHONHASHSEED=0 python main.py --round 10  --name_model biased
 
 # for augmentation
-PYTHONHASHSEED=0 python main.py --use_augmentation --round 10
+PYTHONHASHSEED=0 python main.py --use_augmentation --round 10  --name_model aug
 
 # for non-discrimination learning
-PYTHONHASHSEED=0 python main.py --use_weights --round 10
+PYTHONHASHSEED=0 python main.py --use_weights --round 10  --name_model weight
 ```
 
 We note that make *make_madlib.py* is partly from [conversationai/unintended-ml-bias-analysis]( https://github.com/conversationai/unintended-ml-bias-analysis ).
