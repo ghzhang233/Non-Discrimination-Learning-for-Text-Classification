@@ -13,6 +13,12 @@ dir_processed = "./processed_data/"
 if not os.path.isdir(dir_processed):
     os.mkdir(dir_processed)
 
+def txtload(filename):
+    ret = []
+    with open(filename, "r") as fin:
+        for line in fin.readlines():
+            ret.append(int(line.strip()))
+    return np.array(ret)
 
 def read_data(use_loaded=True):
     file_data = dir_processed + "data_origin.pkl"
@@ -29,9 +35,12 @@ def read_data(use_loaded=True):
 
     num_samples = len(data)
     orders = np.random.permutation(num_samples)
-    idxs_train = orders[0:int(num_samples * 0.8)]
-    idxs_dev = orders[int(num_samples * 0.8): int(num_samples * 0.9)]
-    idxs_test = orders[int(num_samples * 0.9):]
+    idxs_train = txtload("data/train_idx.txt")
+    idxs_dev = txtload("data/dev_idx.txt")
+    idxs_test = txtload("data/test_idx.txt")
+    # idxs_train = orders[0:int(num_samples * 0.8)]
+    # idxs_dev = orders[int(num_samples * 0.8): int(num_samples * 0.9)]
+    # idxs_test = orders[int(num_samples * 0.9):]
     idxs = (idxs_train, idxs_dev, idxs_test)
 
     pickle.dump((data, idxs), open(file_data, "wb"))
@@ -40,7 +49,7 @@ def read_data(use_loaded=True):
 
 def preprocess_data(data,
                     use_loaded=True,
-                    file_emb="./data/glove.840B.300d.txt",
+                    file_emb="../glove.840B.300d.txt",
                     max_num_words=50000,
                     max_len_seq=35,
                     emb_dim=300):
