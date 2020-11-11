@@ -108,6 +108,8 @@ PYTHONHASHSEED=0 python data_utils.py
 
 # make IPTTS
 PYTHONHASHSEED=0 python make_madlib.py
+# or add -longer parameter to make sentences longer as we did
+PYTHONHASHSEED=0 python make_madlib.py -longer
 
 # make weights
 PYTHONHASHSEED=0 python make_weights.py
