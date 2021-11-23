@@ -32,7 +32,6 @@ mkl-random==1.0.2
 mock==2.0.0
 nltk==3.4.1
 numpy==1.16.2
-opencv-python==4.1.0.25
 openpyxl==2.6.2
 pandas==0.24.1
 pbr==5.1.3
